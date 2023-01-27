@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@600&family=Roboto:wght@500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.main{
+ display: flex;
+
+}
+
+.mid-one{
+  width: 40%;
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
+.mid-two{
+  width: 40%;
+  margin-top: 70px;
+
+}
+.para{
+  font-family: 'Caveat', cursive;
+  font-size: large;
+}
+
+.heading,
+.line{
+  font-family: 'Heebo', sans-serif;
+}
