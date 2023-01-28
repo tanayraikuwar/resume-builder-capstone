@@ -1,10 +1,10 @@
 import React from "react";
 import cv from "./Images/cv.webp"
-import "./About.css"
+import "./myCSS/About.css"
 
 const About = () => {
   return (
-    <div>
+    <div className="divAbout">
       <div className="main">
         <div className="mid-one">
           <h2 className="heading">

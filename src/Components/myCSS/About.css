@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@600&family=Roboto:wght@500&display=swap');
 
 
-* {
+.divAbout {
   box-sizing: border-box;
   padding: 0;
   margin: 0;

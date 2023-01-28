@@ -206,17 +206,10 @@ let changeTemplateData = (state = initialState, action) => {
         },
       };
 
-    case "changeEndYear":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          endYear: action.payload,
-        },
-      };
 
     case "addSkills":
       state.keySkills.push(action.payload);
+      break;
     
     default:
       return state;
