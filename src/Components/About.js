@@ -1,8 +1,10 @@
 import React from "react";
+import cv from "./Images/cv.webp"
+import "./myCSS/About.css"
 
 const About = () => {
   return (
-    <div>
+    <div className="divAbout">
       <div className="main">
         <div className="mid-one">
           <h2 className="heading">
@@ -33,9 +35,11 @@ const About = () => {
           <h3 className="line">Share with your friends</h3>
         </div>
         <div className="mid-two">
-          <img src="cv.webp" alt="logo" />
+          <img src={cv} alt="logo" />
         </div>
       </div>
     </div>
   );
 };
+
+export default About;

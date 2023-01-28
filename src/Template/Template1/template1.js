@@ -10,7 +10,7 @@ function Template() {
   return (
     <>
       <div id="template">
-        <div className="header">
+        <div id="header">
           <div className="headerBlock">
             <div className="profile">
               <span>TR</span>
