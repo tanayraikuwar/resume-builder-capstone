@@ -40,13 +40,14 @@
 }
 
 
-.grid-item:hover {
+.grid-item:hover img{
  border: 2px solid blue;
+ opacity: 0.4;
 }
 
 /* my modification */
 
-.btn{
+.Mybtn{
  display: none;
 }
 
@@ -55,6 +56,6 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  margin-left: 90px;
+  margin-left: 120px;
   margin-top: 250px;
 }
