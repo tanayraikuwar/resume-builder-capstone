@@ -62,8 +62,6 @@
 .grid-item:hover button {
   display: flex;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  transform: translate(-50%, -50%);
+  margin-left: 120px;
+  margin-top: 250px;
 }
