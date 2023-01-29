@@ -21,7 +21,7 @@ const Home = () => {
         <div className="grid-container">
 
           <div className="grid-item grid-item-1">
-          <Link to={"/myresume/changePersonalDetails"}> <button className="btn" onClick={
+          <Link to={"/myresume/changePersonalDetails"}> <button className="Mybtn btn btn-primary" onClick={
             console.log("template2")
           }> Use Template</button>
           </Link>
@@ -30,7 +30,7 @@ const Home = () => {
           </div>
 
           <div className="grid-item grid-item-2">
-          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="Mybtn btn btn-primary" onClick={() => {
               console.log("template2")
             }}>Use Template</button></Link>
             <img src={resume2} alt="resume" />
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
 
           <div className="grid-item grid-item-3">
-          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="Mybtn btn btn-primary" onClick={() => {
               console.log("template3")
             }}>Use Template</button></Link>
             <img src={resume3} alt="resume" />
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
 
           <div className="grid-item grid-item-4">
-          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="Mybtn btn btn-primary" onClick={() => {
               console.log("template4")
             }}>Use Template</button></Link>
             <img src={resume4} alt="resume" />
