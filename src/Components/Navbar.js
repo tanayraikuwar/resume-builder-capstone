@@ -10,7 +10,9 @@ function Navbar() {
         <NavLink exact to="/"><img src={alma} alt="almabetter" className="logo" /></NavLink>
         
         <nav className="navbar">
-          <ul className="navbar-list">
+          
+          <ul className="navbar-list m-3">   {/** Adding some bootstrap classes to add margin */}
+            
             <li><NavLink exact style={({ isActive }) => ({
               color: isActive ? 'rgb(20, 122, 218)' : 'rgb(112, 111, 111)'
             })} className={"navbar-link"} to="/" >ResumeTemplate</NavLink></li>
