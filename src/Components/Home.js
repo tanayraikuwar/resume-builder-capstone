@@ -21,31 +21,36 @@ const Home = () => {
         <div className="grid-container">
 
           <div className="grid-item grid-item-1">
+          <Link to={"/myresume/changePersonalDetails"}> <button className="btn" onClick={
+            console.log("template2")
+          }> Use Template</button>
+          </Link>
             <img src={resume} alt="resume" />
-            <Link to={"/myresume/changePersonalDetails"}><button onClick={() => {
-              console.log("template1")
-            }}>Use Template</button></Link>
+            
           </div>
 
           <div className="grid-item grid-item-2">
-            <img src={resume2} alt="resume" />
-            <Link to={"/myresume/changePersonalDetails"}><button onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
               console.log("template2")
             }}>Use Template</button></Link>
+            <img src={resume2} alt="resume" />
+          
           </div>
 
           <div className="grid-item grid-item-3">
-            <img src={resume3} alt="resume" />
-            <Link to={"/myresume/changePersonalDetails"}><button onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
               console.log("template3")
             }}>Use Template</button></Link>
+            <img src={resume3} alt="resume" />
+           
           </div>
 
           <div className="grid-item grid-item-4">
-            <img src={resume4} alt="resume" />
-            <Link to={"/myresume/changePersonalDetails"}><button onClick={() => {
+          <Link to={"/myresume/changePersonalDetails"}><button className="btn" onClick={() => {
               console.log("template4")
             }}>Use Template</button></Link>
+            <img src={resume4} alt="resume" />
+          
           </div>
 
         </div>
