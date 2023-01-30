@@ -45,7 +45,7 @@
 
 .grid-item:hover img {
   border: 2px solid blue;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 /* CSS for button of "useTemplate" */
@@ -53,6 +53,7 @@
 .grid-item {
   position: relative;
   width: 100%;
+  background-image: linear-gradient(grey, black);
 }
 
 .Mybtn {
