@@ -2,10 +2,9 @@
 import { useSelector } from "react-redux";
 import "./template1.css";
 
-
-function Template() {
-  let Maindata = useSelector(store => store);
-  let data = Maindata.changeTemplateData
+function Template1() {
+  let Maindata = useSelector((store) => store);
+  let data = Maindata.changeTemplateData;
   // console.log(data.experience)
   return (
     <>
@@ -95,5 +94,4 @@ function Template() {
   );
 }
 
-export default Template;
-
+export default Template1;

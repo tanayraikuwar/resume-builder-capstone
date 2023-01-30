@@ -1,0 +1,78 @@
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-color: #0a398f;
+}
+
+.headerBlock {
+  margin: auto;
+}
+
+.headerBlock h2 {
+  font-size: xx-large;
+  margin: auto;
+  color: antiquewhite;
+}
+
+.headerBlock p {
+  margin-top: 10px;
+  margin: auto;
+  color: antiquewhite;
+}
+
+.body__part {
+  display: flex;
+  padding: 3rem 5rem;
+}
+
+.template__left {
+  width: 70%;
+  padding-right: 20px;
+  border-right: 1px solid green;
+}
+
+.template__right {
+  width: 30%;
+  padding-left: 4rem;
+}
+
+.h3 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-style: dotted;
+  margin-top: 50px;
+}
+
+.body__part p {
+  color: black;
+}
+
+.eduDetails li {
+  font-weight: normal;
+}
+
+.hr {
+  border: 1.5px solid #6495ed;
+  border-radius: 5px;
+}
+
+.contDetail span {
+  color: black;
+}
+
+.footer {
+  padding: 3rem 5rem;
+  /* border: 0.5px dotted gray; */
+}
+
+.footer p {
+  padding: 1rem 8rem;
+  color: black;
+}
+
+.footer h5 {
+  padding: 1rem 8rem;
+  color: black;
+}
