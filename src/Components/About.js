@@ -38,6 +38,7 @@ const About = () => {
           <img src={cv} alt="logo" />
         </div>
       </div>
+    
     </div>
   );
 };
