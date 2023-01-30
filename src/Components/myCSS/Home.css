@@ -26,36 +26,44 @@
   height: 100%;
   width: 100%;
 }
+
 .grid-item-2 img {
   height: 100%;
   width: 100%;
 }
+
 .grid-item-3 img {
   height: 100%;
   width: 100%;
 }
+
 .grid-item-4 img {
   height: 100%;
   width: 100%;
 }
 
 
-.grid-item:hover img{
- border: 2px solid blue;
- opacity: 0.4;
+.grid-item:hover img {
+  border: 2px solid blue;
+  opacity: 0.4;
 }
 
-/* my modification */
+/* CSS for button of "useTemplate" */
 
-.Mybtn{
- display: none;
+.grid-item {
+  position: relative;
+  width: 100%;
 }
 
-.grid-item:hover button{
+.Mybtn {
+  display: none;
+}
+
+.grid-item:hover button {
   display: flex;
-  cursor: pointer;
-  z-index: 10;
   position: absolute;
-  margin-left: 75px;
-  margin-top: 250px;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

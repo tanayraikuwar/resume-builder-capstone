@@ -36,3 +36,38 @@
 .line{
   font-family: 'Heebo', sans-serif;
 }
+
+/* social media */
+
+.socialMediaLinks{
+  display: flex;
+  width:60%;
+  padding:0;
+  justify-content:space-between;
+  padding-top: 1.5rem;
+  list-style: none;
+}
+.socialMediaLinks li{
+  cursor: pointer;
+}
+
+.fb{
+  color:#3b5998;
+  font-size: 40px;
+}
+.linkedin{
+  color: #0A66C2;
+  font-size: 40px;
+}
+.whatsapp{
+  color:	#25D366;
+  font-size: 40px;
+}
+.twitter{
+  color:#00acee;
+  font-size: 40px;
+}
+.envelope{
+  color:grey;
+  font-size: 40px;
+}

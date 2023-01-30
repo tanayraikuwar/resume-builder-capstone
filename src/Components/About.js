@@ -33,6 +33,13 @@ const About = () => {
           </p>
           <br />
           <h3 className="line">Share with your friends</h3>
+          <ul className="socialMediaLinks">
+            <li><a href="#facebook"><i className="bi bi-facebook fb"></i></a></li>
+            <li><a href="#linkedin"><i className="bi bi-linkedin linkedin"></i></a></li>
+            <li><a href="#whatsapp"><i className="bi bi-whatsapp whatsapp"></i></a></li>
+            <li><a href="#twitter"><i className="bi bi-twitter twitter"></i></a></li>
+            <li><a href="#envelope"><i className="bi bi-envelope-fill envelope"></i></a></li>
+          </ul>
         </div>
         <div className="mid-two">
           <img src={cv} alt="logo" />
