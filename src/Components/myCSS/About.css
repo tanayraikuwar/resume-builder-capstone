@@ -10,26 +10,32 @@
   font-family: "Roboto", sans-serif;
 }
 
-
+/* add display flex to add some spaces */
 .main{
  display: flex;
-
+ justify-content: space-between;
+ margin:80px;
+ margin-right: 0;
 }
 
 .mid-one{
-  width: 40%;
-  margin-top: 70px;
-  margin-left: 150px;
+  width: 50%;
 }
+
+
 
 .mid-two{
-  width: 40%;
-  margin-top: 70px;
-
+  display: flex;
+  align-items: center;
 }
+
+.mid-two img{
+  padding-bottom: 80px;
+}
+
 .para{
   font-family: 'Caveat', cursive;
-  font-size: large;
+  font-size: x-large;
 }
 
 .heading,
