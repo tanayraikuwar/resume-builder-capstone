@@ -1,96 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-#template{
-    margin:20px;
-    line-height: 2;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0 0 100px 0;
-    color: 	#6495ED;
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+#template {
+  margin: 20px;
+  line-height: 2;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 0 100px 0;
+  color: #6495ed;
 }
 
 /* This is header css */
 
-#header{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    height:200px
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
 }
 
-.profile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85px;
-    width: 10px;
-    background-color: #6495ED;
-    border-radius: 100%;
-    z-index: 1;
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  width: 10px;
+  background-color: #6495ed;
+  border-radius: 100%;
+  z-index: 1;
 }
-.profile span{
-    color: white;
-    z-index: 2;
-    font-size: 35px;
-    font-weight: bolder;
-    padding: 0;
-}
-
-
-hr{
-    border: 5px solid #6495ED;
-    border-radius: 5px;
+.profile span {
+  color: white;
+  z-index: 2;
+  font-size: 35px;
+  font-weight: bolder;
+  padding: 0;
 }
 
-.headerBlock{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+hr {
+  border: 5px solid #6495ed;
+  border-radius: 5px;
 }
 
-.headerBlock div{
-    padding:0 40px
+.headerBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contDetail{
-    line-height: normal;
+.headerBlock div {
+  padding: 0 40px;
 }
 
+.contDetail {
+  line-height: normal;
+}
 
 /* This is summary css */
-.proffExperience{
-    display:flex;
-    justify-content: space-between;
+.proffExperience {
+  display: flex;
+  justify-content: space-between;
 }
 
-.experience{
-    width:75%;
-    color:black;
+.experience {
+  width: 75%;
+  color: black;
 }
 
 /* This is education css */
 
-.education{
-    display:flex;
-    justify-content: space-between;
+.education {
+  display: flex;
+  justify-content: space-between;
 }
 
-.eduDetails{
-    width:75%;
-    color:black;
+.eduDetails {
+  width: 75%;
+  color: black;
 }
 
 /* key skill CSS */
 
 .keySkills ul {
-    color:black;
+  color: black;
 }
 
-.contactDetail ul li{
-    font-size: 15px;
-    font-weight: bold;
+.contactDetail ul li {
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.keySkill ul li{
-    font-size: 15px;
-    font-weight: bold;
+.keySkill ul li {
+  font-size: 15px;
+  font-weight: bold;
 }
