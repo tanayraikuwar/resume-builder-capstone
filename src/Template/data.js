@@ -1,7 +1,7 @@
 let mainData = {
   PersonalInfo: {
-    name: "firstname",
-    Lname: "lastname",
+    name: "Firstname",
+    Lname: "Lastname",
     heading: "Full stack developer",
     contactDetail: {
       email: "abc@gmail.com",

@@ -1,0 +1,71 @@
+.body__part3 {
+  display: flex;
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+.template__left3 {
+  width: 40%;
+  background-color: rgb(104, 101, 101);
+  padding: 2rem 2rem;
+  color: white;
+}
+
+.sub_body3 {
+  padding: 4rem 5rem;
+}
+
+.nameBlock3 {
+  background-color: yellow;
+  padding: 4rem;
+}
+
+.nameBlock3 h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.nameBlock3 p {
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.proffExperience3 h3 {
+  padding-top: 4rem;
+}
+
+.keySkills3 h3 {
+  padding-top: 4rem;
+}
+
+.avtar {
+  height: 10rem;
+}
+
+.sub__avtar {
+  padding-left: 40%;
+  padding-top: 5%;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  border-radius: 999px;
+}
+
+.education3 h3 {
+  padding-top: 30%;
+}
+
+.footer3 {
+  padding: 3rem 5rem;
+  /* border: 0.5px dotted gray; */
+}
+
+.footer3 p {
+  padding: 1rem 8rem;
+  color: black;
+}
+
+.footer3 h5 {
+  padding: 1rem 8rem;
+  color: black;
+}
