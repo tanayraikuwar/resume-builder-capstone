@@ -12,18 +12,30 @@ let changeOrganization = (value) => {
     }
 }
 
-let changeStartYear = (value) => {
+let changeStartDate = (value) => {
     return{
-        type:"changeStartYear",
+        type:"changeStartDate",
         payload:value
     }
 }
 
-let changeEndYear = (value) => {
+let changeEndDate = (value) => {
     return{
-        type:"changeEndYear",
+        type:"changeEndDate",
         payload:value
     }
 }
 
-export {changeTitle , changeOrganization , changeStartYear , changeEndYear};
+let addExperience = () => {
+    return{
+        type:"addExperience"
+    }
+} 
+
+let removeExperience = () => {
+    return{
+        type:"removeExperience"
+    }
+}
+
+export {changeTitle , changeOrganization , changeStartDate , changeEndDate , addExperience , removeExperience};
