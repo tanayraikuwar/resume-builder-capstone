@@ -1,5 +1,7 @@
 import mainData from "../../Template/data"
 
+// this reducer is more easy to read than previous reducer
+
 
 let initialState = mainData;
 console.log(initialState);
@@ -95,7 +97,7 @@ let changeTemplateData = (state = initialState, action) => {
       state.education.endYear = action.payload;
       return { ...state };
 
-
+// this section is for Key skills
     case "addSkills":
       state.keySkills.push(action.payload);
       return { ...state };

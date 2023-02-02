@@ -5,4 +5,11 @@ let addSkills = (value) => {
     }
 }
 
-export default addSkills;
+let removeSkills = (value) => {
+    return{
+        type:"removeSkills",
+        payload:value
+    }
+}
+
+export {addSkills,removeSkills};
