@@ -16,9 +16,7 @@ function Template3() {
         <div className="body__part3">
           <div className="template__left3">
             <div className="avtar">
-              <div className="sub__avtar">
-                {f_letter} {l_letter}
-              </div>
+              
             </div>
             <div className="education3">
               <h3 className="h3">EDUCATION : </h3>
