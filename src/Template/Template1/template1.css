@@ -34,7 +34,7 @@
   padding: 0;
 }
 
-hr {
+#template hr {
   border: 5px solid #6495ed;
   border-radius: 5px;
 }
