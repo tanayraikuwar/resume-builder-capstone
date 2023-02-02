@@ -4,213 +4,106 @@ import mainData from "../../Template/data"
 let initialState = mainData;
 console.log(initialState);
 let changeTemplateData = (state = initialState, action) => {
+  // to change Personal Info
   switch (action.type) {
     case "changeName":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          name: action.payload,
-        },
-      };
+      state.PersonalInfo.name = action.payload;
+      return { ...state };
 
     case "changeLname":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          Lname: action.payload,
-        },
-      };
+      state.PersonalInfo.Lname = action.payload;
+      return { ...state };
 
     case "changeHeading":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          heading: action.payload,
-        },
-      };
+      state.PersonalInfo.heading = action.payload;
+      return { ...state };
 
     case "changeEmail":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            email: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.email = action.payload
+      return { ...state };
 
     case "changeMobile":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            mobile: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.mobile = action.payload
+      return { ...state };
 
     case "changeAddress":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            address: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.address = action.payload
+      return { ...state };
 
     case "changeCity":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            city: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.city = action.payload
+      return { ...state };
 
     case "changeState":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            state: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.state = action.payload
+      return { ...state };
 
     case "changePostalCode":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          contactDetail: {
-            ...state.PersonalInfo.contactDetail,
-            PostalCode: action.payload,
-          },
-        },
-      };
+      state.PersonalInfo.contactDetail.PostalCode = action.payload
+      return { ...state };
 
     case "changeObjective":
-      return {
-        ...state,
-        PersonalInfo: {
-          ...state.PersonalInfo,
-          objective: action.payload,
-        },
-      };
+      state.PersonalInfo.objective = action.payload
+      return { ...state };
+
+    // to change in Professional Experience
 
     case "changeTitle":
-      return {
-        ...state,
-        experience: [
-          ...state.experience,
-          {
-            ...state.experience[state.experience.length - 1],
-            title: action.type,
-          },
-        ],
-      };
+      state.experience[state.experience.length - 1].title = action.payload;
+      return { ...state };
 
     case "changeOrganization":
-      return {
-        ...state,
-        experience: [
-          ...state.experience,
-          {
-            ...state.experience[state.experience.length - 1],
-            organization: action.type,
-          },
-        ],
-      };
+      state.experience[state.experience.length - 1].organization = action.payload;
+      return { ...state };
 
     case "changeStartDate":
-      return {
-        ...state,
-        experience: [
-          ...state.experience,
-          {
-            ...state.experience[state.experience.length - 1],
-            startDate: action.type,
-          },
-        ],
-      };
+      state.experience[state.experience.length - 1].startDate = action.payload;
+      return { ...state };
 
     case "changeEndDate":
-      return {
-        ...state,
-        experience: [
-          ...state.experience,
-          {
-            ...state.experience[state.experience.length - 1],
-            endDate: action.type,
-          },
-        ],
-      };
+      state.experience[state.experience.length - 1].endDate = action.payload;
+      return { ...state };
+
+    case "addExperience":
+      state.experience.push({});
+      console.log(state.experience)
+      return { ...state };
+
+    case "removeExperience":
+      state.experience.pop();
+      return { ...state };
+
+    //education starts here
 
     case "changeType":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          type: action.payload,
-        },
-      };
+      state.education.type = action.payload;
+      return { ...state };
 
     case "changeUniversity":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          university: action.payload,
-        },
-      };
+      state.education.university = action.payload;
+      return { ...state };
 
     case "changeDegree":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          degree: action.payload,
-        },
-      };
+      state.education.degree = action.payload;
+      return { ...state };
 
     case "changeStartYear":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          startYear: action.payload,
-        },
-      };
+      state.education.startYear = action.payload;
+      return { ...state };
 
     case "changeEndYear":
-      return {
-        ...state,
-        education: {
-          ...state.education,
-          endYear: action.payload,
-        },
-      };
+      state.education.endYear = action.payload;
+      return { ...state };
 
 
     case "addSkills":
       state.keySkills.push(action.payload);
-      break;
-    
+      return { ...state };
+
+    case "removeSkills":
+      state.keySkills.pop();
+      return { ...state };
+
     default:
       return state;
   }
