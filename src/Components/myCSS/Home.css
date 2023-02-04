@@ -17,30 +17,18 @@
   width: 90%;
   margin: 50px auto;
   display: grid;
-  grid-template-rows: 500px;
+  /* grid-template-rows: 500px; */  /* It can be moved */
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
 
-.grid-item-1 img {
+/* remove some repetative content */
+
+.grid-item img {
   height: 100%;
   width: 100%;
 }
 
-.grid-item-2 img {
-  height: 100%;
-  width: 100%;
-}
-
-.grid-item-3 img {
-  height: 100%;
-  width: 100%;
-}
-
-.grid-item-4 img {
-  height: 100%;
-  width: 100%;
-}
 
 
 .grid-item:hover img {
@@ -67,4 +55,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* media queries for making homePage responsive */
+
+@media (max-width:700px){
+  .grid-container{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
