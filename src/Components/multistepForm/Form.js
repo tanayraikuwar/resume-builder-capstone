@@ -6,7 +6,9 @@ import Education from "./FormComponents/Education";
 import "./FormComponents/formCSS/mainForm.css"
 import { useDispatch,useSelector } from "react-redux";
 
+
 // this component is skeleton of form !! 
+
 
 let Form = () => {
     const [page, setPage] = useState(0);
