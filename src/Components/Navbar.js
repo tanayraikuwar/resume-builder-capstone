@@ -56,7 +56,16 @@ setIsMenuClicked(!isMenuClicked)
              <div className={burger_class} ></div>
           </div>
         </nav>
-        <div className={menu_class}></div>
+        <div className={menu_class}>
+          <ul className='component-items'>
+            <li className='items'>Resume
+            </li>
+            <li className='items'>My Resume
+            </li>
+            <li className='items'>About Us
+            </li>
+          </ul>
+        </div>
       </header></div>
   )
 }

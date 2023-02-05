@@ -64,9 +64,4 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-  .mainHome{
-    background-color: green;
-    border: 2px solid black;
-    
-  }
 }
