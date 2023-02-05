@@ -21,6 +21,7 @@
   justify-content: space-between;
   box-shadow: 2px 2px 8px grey;
   border-radius: 10px;
+  overflow:hidden;
 }
 
 .header .logo {
@@ -53,7 +54,7 @@
 
 /* phone display */
 
-@media (max-width:700px){
+@media (max-width:500px){
   .navbar-list{
     display: none;
   }
@@ -91,6 +92,7 @@
 .hidden {
   display: none;
 }
+
 
 
 .visible {
