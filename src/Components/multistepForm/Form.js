@@ -7,7 +7,9 @@ import "./FormComponents/formCSS/mainForm.css"
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
+
 // this component is skeleton of form !! 
+
 
 let Form = () => {
     const [page, setPage] = useState(0);

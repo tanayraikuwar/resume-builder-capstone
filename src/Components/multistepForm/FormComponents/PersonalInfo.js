@@ -14,6 +14,9 @@ import {
   } from "../../../Redux/Action/personalInfo";
 
 
+  
+  
+
 const PersonalInfo = (props) => {
     let imageChange = (e) => {
         if (e.target.files && e.target.files.length > 0) {
@@ -53,7 +56,7 @@ const PersonalInfo = (props) => {
                     </div>
                     <div className="col-md-6 mb-5">
                         <label htmlFor="inputLastName" className="form-label">Last Name</label>
-                        <input type="text" className="form-control" onChange={(e)=>changePersonalInfo(e,changeLname)} />
+                        <input type="text" className="form-control" onChange={(e)=>changePersonalInfo(e,changeLname)}  />
                     </div>
 
                     <div className="col-md-12 mb-5">
