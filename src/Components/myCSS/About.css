@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@600&family=Roboto:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@600&family=Roboto:wght@500&display=swap");
 
 .divAbout {
   box-sizing: border-box;
@@ -11,69 +10,82 @@
 }
 
 /* add display flex to add some spaces */
-.main{
- display: flex;
- justify-content: space-between;
- margin:80px;
- margin-right: 0;
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px;
+  margin-right: 0;
 }
 
-.mid-one{
+.mid-one {
   width: 50%;
 }
 
-
-
-.mid-two{
+.mid-two {
   display: flex;
   align-items: center;
 }
 
-.mid-two img{
+.mid-two img {
   padding-bottom: 80px;
 }
 
-.para{
-  font-family: 'Caveat', cursive;
+.para {
+  font-family: "Caveat", cursive;
   font-size: x-large;
 }
 
 .heading,
-.line{
-  font-family: 'Heebo', sans-serif;
+.line {
+  font-family: "Heebo", sans-serif;
 }
 
 /* social media */
-
-.socialMediaLinks{
+.line {
+  padding-left: 4rem;
+}
+.socialMediaLinks {
   display: flex;
-  width:60%;
-  padding:0;
-  justify-content:space-between;
+  width: 30%;
+  padding-left: 4rem;
+  justify-content: space-between;
   padding-top: 1.5rem;
   list-style: none;
 }
-.socialMediaLinks li{
+.socialMediaLinks li {
   cursor: pointer;
 }
 
-.fb{
-  color:#3b5998;
+.fb {
+  color: #3b5998;
   font-size: 40px;
 }
-.linkedin{
-  color: #0A66C2;
+.linkedin {
+  color: #0a66c2;
   font-size: 40px;
 }
-.whatsapp{
-  color:	#25D366;
+.whatsapp {
+  color: #25d366;
   font-size: 40px;
 }
-.twitter{
-  color:#00acee;
+.twitter {
+  color: #00acee;
   font-size: 40px;
 }
-.envelope{
-  color:grey;
+.envelope {
+  color: grey;
   font-size: 40px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: block;
+  }
+  .mid-one {
+    width: 80%;
+  }
+  .mid-two {
+    align-items: left;
+    width: 1rem;
+  }
 }
