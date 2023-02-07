@@ -17,7 +17,6 @@
   width: 90%;
   margin: 50px auto;
   display: grid;
-  /* grid-template-rows: 500px; */  /* It can be moved */
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
@@ -59,9 +58,25 @@
 
 /* media queries for making homePage responsive */
 
-@media (max-width:500px){
+@media (max-width:800px){ /*media queries to show two template on a line*/
+  .grid-container{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:600px){
   .grid-container{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .mainHome{ /*to maintain width of navbar width*/
+    width:85%;
+  }
+  .grid-container{
+    margin-left: 45px;
+  }
 }
+
+/* Media queries end */
