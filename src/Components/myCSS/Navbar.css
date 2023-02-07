@@ -1,38 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-.mainNavbar {
+
+.header {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-  /*padding: 0 48px;
-  height: 60px;
+.navbar {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 8px grey;
-  border-radius: 10px;*/
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
   box-shadow: 2px 2px 8px grey;
   border-radius: 10px;
   overflow:hidden;
 }
 
-.header .logo {
+.navbar .logo {
   height: 40px;
   margin-left: 20px;
-  margin-top: 18px;
+  margin-bottom: 5px;
   cursor: pointer;
-}
-
-.navbar {
-  margin-left: 500px;
 }
 
 .navbar-list {
@@ -51,100 +42,49 @@
   transition: all 0.3s;
 }
 
-.component-items {
+/* for hamberger menu */
+
+.navbar .bi{ /*we import hamberger icon and here we access it to manipulate */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 35px;
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
 }
 
-
-/* phone display */
-
-@media (max-width:500px){
+@media (max-width:800px){
+  .navbar .bi{
+    display: flex;
+  }
   .navbar-list{
     display: none;
+    width: 100%;
   }
-  /* hamburger */
 
-.burger-menu {
-  height: 70%;
-  width: 4em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  cursor: pointer;
-  flex-direction: column;
-  margin-left: -350px;
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul{
+    /* display: flex; */
+    flex-direction: column;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .navbar li{
+    text-align: center;
+    margin:0;
+  }
+
+  .navbar-list.active{
+    display:flex;
+  }
 }
 
-.burger-bar {
-  width: 3.5em;
-  height: 0.3em;
-  background-color: black;
-  border-radius: 0.5em;
-}
-
-.menu {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  background-color: rgb(255, 69, 69);
-  z-index: 1;
-}
-
-/* sliding menu */
-
-.hidden {
-  display: none;
-}
-
-
-
-.visible {
-  display: inherit;
-  margin-top: 70px;
-}
-
-/* animation -- clicked*/
-.burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.25em, 1.25em);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
-  transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.25em, 1.25em);
-  transition: ease-out 0.5s;
-}
-
-/* unclicked */
-
-.burger-bar .unclicked {
-  transform: rotate(0) translate(0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-}
-
-/* this is ul of the hamburger menu */
-.component-items{
-  display: block;
-  list-style-type: none;
-}
-
-
-/* Hamburger items use for hover effect */
-.items{
-  width: 394px;
-  height: 100px;
-  margin-left: -32px;
-  background-color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 30px;
-}
-
-}
 
 
