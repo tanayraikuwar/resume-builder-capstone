@@ -10,7 +10,7 @@ function Template2() {
     <>
       <div id="template">
         <div className="header1">
-          <div className="headerBlock">
+          <div className="headerBlockTemp2">
             <div>
               <h2>
                 {data.PersonalInfo.name} {data.PersonalInfo.Lname}
@@ -124,11 +124,11 @@ function Template2() {
         <div className="footer">
           <h3 className="h3">DECLERATION : </h3>
           <p>
-            I,{" "}
+            I,
             <span>
-              {data.PersonalInfo.name} {data.PersonalInfo.Lname}
-            </span>{" "}
-            solemnly declare that all the above information is correct to the
+              {data.PersonalInfo.name} {data.PersonalInfo.Lname} 
+             </span>
+            <span></span> solemnly declare that all the above information is correct to the
             best of my knowledge and belief.
           </p>
           <h5>
@@ -136,7 +136,7 @@ function Template2() {
           </h5>
         </div>
         <hr className="hr" />
-        <hr className="hr" />
+        {/* <hr className="hr" /> */}
       </div>
     </>
   );

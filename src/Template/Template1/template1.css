@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 #template {
-  margin: 20px;
+  margin: 1.25em;
   line-height: 2;
   font-family: "Ubuntu", sans-serif;
-  padding: 0 0 100px 0;
+  padding: 0 0 6.25em 0;
   color: #6495ed;
 }
 
@@ -13,15 +13,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 12.5em;
 }
 
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85px;
-  width: 10px;
+  height: 5.3125em;
+  width: 0.625em;
   background-color: #6495ed;
   border-radius: 100%;
   z-index: 1;
@@ -29,14 +29,14 @@
 .profile span {
   color: white;
   z-index: 2;
-  font-size: 35px;
+  font-size: 2.1875em;
   font-weight: bolder;
   padding: 0;
 }
 
 #template hr {
-  border: 5px solid #6495ed;
-  border-radius: 5px;
+  border: 0.3125em solid #6495ed;
+  border-radius: 0.3125em;
 }
 
 .headerBlock {
@@ -45,8 +45,12 @@
   align-items: center;
 }
 
+.headerBlock h2{
+  font-size: 1.875em;
+}
+
 .headerBlock div {
-  padding: 0 40px;
+  padding: 0 2.5em;
 }
 
 .contDetail {
@@ -54,14 +58,26 @@
 }
 
 /* This is summary css */
+.summary h2{
+  font-size: 1.875em;
+}
+/* this is professional experience section*/
 .proffExperience {
   display: flex;
   justify-content: space-between;
 }
 
+.proffExperience h3{
+  font-size: 1.625em;
+}
+
 .experience {
-  width: 75%;
+  width: 69%;
   color: black;
+}
+
+.experience h4 {
+  font-size: 1.25em;
 }
 
 /* This is education css */
@@ -69,6 +85,10 @@
 .education {
   display: flex;
   justify-content: space-between;
+}
+
+.education h3{
+  font-size: 1.625em;
 }
 
 .eduDetails {
@@ -82,12 +102,16 @@
   color: black;
 }
 
+.keySkills h4{
+  font-size: 1.25em;
+}
+
 .contactDetail ul li {
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: bold;
 }
 
 .keySkill ul li {
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: bold;
 }
