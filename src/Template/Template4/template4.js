@@ -13,79 +13,39 @@ function Template4() {
   return (
     <>
       <div id="template4">
-        <div className="body__part4">
-          <div className="template__left4">
-            <div className="avtar4">
-              <div className="sub__avtar4">
-                {f_letter} {l_letter}
-              </div>
-            </div>
-            <div className="education4">
-              <h3 className="h3">EDUCATION : </h3>
-              <div className="eduDetails4">
-                <div>
-                  <ul>
-                    <li>Type : {data.education.type}</li>
-                    <li>University : {data.education.university}</li>
-                    <li>Degree : {data.education.degree}</li>
-                    <li>
-                      {data.education.startYear} - {data.education.endYear}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contDetail4">
-              <h3 className="h3">CONTACT : </h3>
-              <ul>
-                <li>
-                  Email : <span>{data.PersonalInfo.contactDetail.email}</span>
-                </li>
-                <li>
-                  Mobile : <span>{data.PersonalInfo.contactDetail.mobile}</span>
-                </li>
-                <li>
-                  Address :{" "}
-                  <span> {data.PersonalInfo.contactDetail.address}</span>
-                </li>
-                <li>
-                  City : <span> {data.PersonalInfo.contactDetail.city}</span>
-                </li>
-                <li>
-                  State : <span> {data.PersonalInfo.contactDetail.state}</span>
-                </li>
-                <li>
-                  Postal code :{" "}
-                  <span> {data.PersonalInfo.contactDetail.PostalCode}</span>
-                </li>
-              </ul>
+        <div className="name4">
+          <div className="nameBlock4">
+            <div>
+              <h2 className="h24">
+                {first_name} {last_name}
+              </h2>
+              <p style={{ fontWeight: "bold" }}>{data.PersonalInfo.heading}</p>
             </div>
           </div>
-          <div className="template__right4">
-            <div className="name4">
-              <div className="nameBlock4">
-                <div>
-                  <h2>
-                    {first_name} {last_name}
-                  </h2>
-                  <p style={{ fontWeight: "bold" }}>
-                    {data.PersonalInfo.heading}
-                  </p>
-                </div>
+        </div>
+        <div className="body__part4">
+          <div className="sub__body4">
+            <div className="summary4">
+              <h3 className="h34">SUMMARY : </h3>
+
+              <p>{data.PersonalInfo.objective}</p>
+            </div>
+            <div className="template4.1">
+              <div className="avtar4">
+                {/* <div className="sub__avtar4">
+                  {f_letter} {l_letter}
+                </div> */}
               </div>
             </div>
-            <div className="sub_body4">
-              <div className="summary4">
-                <h3 className="h3">SUMMARY : </h3>
-                <hr className="hr4" />
-                <p>{data.PersonalInfo.objective}</p>
-              </div>
-
-              <div className="proffExperience3">
+          </div>
+          <hr className="hr4" />
+          <div className="main__body">
+            <div className="body__left4">
+              <div className="proffExperience4">
                 <div>
-                  <h3 className="h3">WORK EXPERIENCE : </h3>
+                  <h3 className="h34">WORK EXPERIENCE : </h3>
                 </div>
-                <hr className="hr4" />
+
                 <div className="experience4">
                   <div>
                     {data.experience.map((value) => {
@@ -114,9 +74,25 @@ function Template4() {
                   </div>
                 </div>
               </div>
+              <div className="education4">
+                <h3 className="h34">EDUCATION : </h3>
+                <div className="eduDetails4">
+                  <div>
+                    <ul>
+                      <li>Type : {data.education.type}</li>
+                      <li>University : {data.education.university}</li>
+                      <li>Degree : {data.education.degree}</li>
+                      <li>
+                        {data.education.startYear} - {data.education.endYear}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="body__right4">
               <div className="keySkills4">
-                <h3 className="h3">KEY SKILLS : </h3>
-                <hr className="hr4" />
+                <h3 className="h34">KEY SKILLS : </h3>
 
                 <ul>
                   {data.keySkills.map((value) => {
@@ -124,11 +100,38 @@ function Template4() {
                   })}
                 </ul>
               </div>
+              <div className="contDetail4">
+                <h3 className="h34">CONTACT : </h3>
+                <ul>
+                  <li>
+                    Email : <span>{data.PersonalInfo.contactDetail.email}</span>
+                  </li>
+                  <li>
+                    Mobile :{" "}
+                    <span>{data.PersonalInfo.contactDetail.mobile}</span>
+                  </li>
+                  <li>
+                    Address :{" "}
+                    <span> {data.PersonalInfo.contactDetail.address}</span>
+                  </li>
+                  <li>
+                    City : <span> {data.PersonalInfo.contactDetail.city}</span>
+                  </li>
+                  <li>
+                    State :{" "}
+                    <span> {data.PersonalInfo.contactDetail.state}</span>
+                  </li>
+                  <li>
+                    Postal code :{" "}
+                    <span> {data.PersonalInfo.contactDetail.PostalCode}</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div className="footer4">
-          <h3 className="h3">DECLERATION : </h3>
+          <h3 className="h34">DECLERATION : </h3>
           <p>
             I,{" "}
             <span>
