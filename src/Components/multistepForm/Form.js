@@ -16,6 +16,8 @@ let Form = () => {
     let pageHeading = ["Personal Information", "Work Experience", "Education Details", "Key Skills"]
     let dispatch = useDispatch();
     let MainData = useSelector(data => data).changeTemplateData;
+
+    //below function is for displaying different step's of forms 
     const pageDisplay = () => {
         switch (page) {
             case 0:
@@ -73,7 +75,10 @@ let Form = () => {
                             className={page === (pageHeading.length - 1) ? displayNoneButton : activeButton}
                             // disabled={page === pageHeading.length - 1} 
                             onClick={() => { setPage((presentPage) => presentPage + 1) }}>Next</button>
-                        <Link to={"/myresume/changePersonalDetails/preview"} className={page === (pageHeading.length - 1) ? activeButton : displayNoneButton}>Preview</Link>
+                        
+                        <Link to={"/myresume/changePersonalDetails/preview"}
+                            className={page === (pageHeading.length - 1) ? activeButton : displayNoneButton}
+                        >Preview</Link>
                         {/* the above changes are made to land on preview page */}
                     </div>
                 </div>
