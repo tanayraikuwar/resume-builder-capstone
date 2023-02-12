@@ -8,6 +8,8 @@ import Template2 from "./Template/Template2/template2";
 import Template3 from "./Template/Template3/template3";
 import Template4 from "./Template/Template4/template4";
 import Form from "./Components/multistepForm/Form";
+import PreviewTemplate from "./Components/PreviewTemplate";
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
           path="/myresume/changePersonalDetails"
           element={<Form />}
         />
+        <Route exact path="/myresume/changePersonalDetails/preview" element={<PreviewTemplate/>}/>
       </Routes>
     </>
   );
