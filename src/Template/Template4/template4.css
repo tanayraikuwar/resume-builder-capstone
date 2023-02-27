@@ -3,8 +3,7 @@
 }
 
 .nameBlock4 {
-  margin: auto;
-  padding: 4rem 4rem;
+  padding: 4rem 0rem;
 }
 
 .sub__body4 {
@@ -51,4 +50,30 @@
 }
 .footer4 {
   padding: 4rem 8rem;
+}
+.initilas4 {
+  align-self: center;
+}
+
+.name4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.31em;
+  width: 7rem;
+  background-color: #6495ed;
+  border-radius: 100%;
+  z-index: 1;
+}
+.profile4 span {
+  color: white;
+  z-index: 2;
+  font-size: 2.1875em;
+  font-weight: bolder;
+  padding: 0;
 }

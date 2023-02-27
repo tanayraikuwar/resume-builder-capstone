@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-
 .header {
   box-sizing: border-box;
   padding: 0;
@@ -16,7 +15,7 @@
   align-items: center;
   box-shadow: 2px 2px 8px grey;
   border-radius: 10px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .navbar .logo {
@@ -44,7 +43,8 @@
 
 /* for hamberger menu */
 
-.navbar .bi{ /*we import hamberger icon and here we access it to manipulate */
+.navbar .bi {
+  /*we import hamberger icon and here we access it to manipulate */
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -56,35 +56,32 @@
   cursor: pointer;
 }
 
-@media (max-width:800px){
-  .navbar .bi{
+@media (max-width: 800px) {
+  .navbar .bi {
     display: flex;
   }
-  .navbar-list{
+  .navbar-list {
     display: none;
     width: 100%;
   }
 
-  .navbar{
+  .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .navbar ul{
+  .navbar ul {
     /* display: flex; */
     flex-direction: column;
     width: 100%;
     transition: 0.5s;
   }
-  .navbar li{
+  .navbar li {
     text-align: center;
-    margin:0;
+    margin: 0;
   }
 
-  .navbar-list.active{
-    display:flex;
+  .navbar-list.active {
+    display: flex;
   }
 }
-
-
-

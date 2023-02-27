@@ -15,9 +15,7 @@ function Template3() {
       <div id="template3">
         <div className="body__part3">
           <div className="template__left3">
-            <div className="avtar">
-              
-            </div>
+            <div className="avtar"></div>
             <div className="education3">
               <h3 className="h3">EDUCATION : </h3>
               <div className="eduDetails3">
@@ -69,6 +67,14 @@ function Template3() {
                   <p style={{ fontWeight: "bold" }}>
                     {data.PersonalInfo.heading}
                   </p>
+                </div>
+              </div>
+              <div className="initials">
+                <div className="profile3">
+                  <span>
+                    {f_letter}
+                    {l_letter}
+                  </span>
                 </div>
               </div>
             </div>

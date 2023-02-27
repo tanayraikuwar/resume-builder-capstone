@@ -5,6 +5,10 @@ import "./template1.css";
 function Template1() {
   let Maindata = useSelector((store) => store);
   let data = Maindata.changeTemplateData;
+  var first_name = data.PersonalInfo.name;
+  var last_name = data.PersonalInfo.Lname;
+  var f_letter = first_name.charAt(0);
+  var l_letter = last_name.charAt(0);
   // console.log(data.experience)
   return (
     <>
@@ -12,7 +16,10 @@ function Template1() {
         <div id="header">
           <div className="headerBlock">
             <div className="profile">
-              <span>TR</span>
+              <span>
+                {f_letter}
+                {l_letter}
+              </span>
             </div>
             <div>
               <h2>

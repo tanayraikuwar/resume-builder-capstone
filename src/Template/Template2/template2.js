@@ -5,11 +5,23 @@ import "./template2.css";
 function Template2() {
   let Maindata = useSelector((store) => store);
   let data = Maindata.changeTemplateData;
+  var first_name = data.PersonalInfo.name;
+  var last_name = data.PersonalInfo.Lname;
+  var f_letter = first_name.charAt(0);
+  var l_letter = last_name.charAt(0);
   // console.log(data.experience)
   return (
     <>
       <div id="template">
         <div className="header1">
+          <div className="initilas3">
+            <div className="profile2">
+              <span>
+                {f_letter}
+                {l_letter}
+              </span>
+            </div>
+          </div>
           <div className="headerBlockTemp2">
             <div>
               <h2>
@@ -126,10 +138,10 @@ function Template2() {
           <p>
             I,
             <span>
-              {data.PersonalInfo.name} {data.PersonalInfo.Lname} 
-             </span>
-            <span></span> solemnly declare that all the above information is correct to the
-            best of my knowledge and belief.
+              {data.PersonalInfo.name} {data.PersonalInfo.Lname}
+            </span>
+            <span></span> solemnly declare that all the above information is
+            correct to the best of my knowledge and belief.
           </p>
           <h5>
             ( {data.PersonalInfo.name} {data.PersonalInfo.Lname} )

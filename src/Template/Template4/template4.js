@@ -22,6 +22,14 @@ function Template4() {
               <p style={{ fontWeight: "bold" }}>{data.PersonalInfo.heading}</p>
             </div>
           </div>
+          <div className="initilas4">
+            <div className="profile4">
+              <span>
+                {f_letter}
+                {l_letter}
+              </span>
+            </div>
+          </div>
         </div>
         <div className="body__part4">
           <div className="sub__body4">
