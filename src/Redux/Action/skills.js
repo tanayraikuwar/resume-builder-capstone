@@ -5,10 +5,9 @@ let addSkills = (value) => {
     }
 }
 
-let removeSkills = (value) => {
+let removeSkills = () => {
     return{
-        type:"removeSkills",
-        payload:value
+        type:"removeSkills"
     }
 }
 

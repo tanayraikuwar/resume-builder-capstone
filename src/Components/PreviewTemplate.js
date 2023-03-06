@@ -1,7 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useState } from 'react';
 import "./myCSS/previewTemplate.css";
+
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 // importing below dependancies for printing PDF's
 import jsPDF from 'jspdf';
@@ -15,9 +17,10 @@ import Template4 from '../Template/Template4/template4';
 
 
 const PreviewTemplate = () => {
-    let [fileName, setFileName] = useState("");
-    if (fileName === "") setFileName("template");
-    
+    const { register, trigger, formState: { errors }, handleSubmit, reset } = useForm();
+    let navigate = useNavigate();
+
+
     // below code is for selecting templates according to index
     let templateIndex = useSelector(data => data).changeTemplateIndex;
     let selectTemplate = () => {
@@ -39,7 +42,7 @@ const PreviewTemplate = () => {
     // below code is for download PDF of resumeTemplate
     let printRef = React.useRef();
 
-    const handleDownloadPdf = async () => {
+    const handleDownloadPdf = async (fileData) => {
         const element = printRef.current;
         const canvas = await html2canvas(element);
         const data = canvas.toDataURL('image/jpeg', 1.0);
@@ -54,8 +57,17 @@ const PreviewTemplate = () => {
         const pdfHeight =
             (imgProperties.height * pdfWidth) / imgProperties.width;
         pdf.addImage(data, 'JPEG', 0, 0, pdfWidth, pdfHeight, "", "MEDIUM");
-        pdf.save(`${fileName}.pdf`);
+        pdf.save(`${fileData.fileName}.pdf`);
     };
+
+    let onSubmit = async (data) => {
+        await handleDownloadPdf(data)
+        reset();
+    };
+
+    let goToAddDetails = () => {
+        navigate(-1)
+    }
 
     return (
         <>
@@ -65,12 +77,22 @@ const PreviewTemplate = () => {
                     <div ref={printRef}>{selectTemplate()}</div>
                 </div>
                 <div className="inputFileName">
-                    <h4>Create File Name</h4>
-                    <input type="text" className='form-control' onChange={(e) => setFileName(e.target.value)} />
-                    <div className="buttonGroup">
-                        <button className='btn btn-outline-warning me-3'>Prev</button>
-                        <button onClick={handleDownloadPdf} className='btn btn-primary'>Save</button>
-                    </div>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <h4>Create File Name</h4>
+                        <input type="text" className='form-control mb-0'
+                            {...register("fileName", {
+                                required: "File Name is required!",
+                            })}
+                            onKeyUp={() => trigger("fileName")}
+                        />
+                        {errors.fileName && (<small className='text-danger'>{errors.fileName.message}</small>)}
+                        <div className="buttonGroup mt-3">
+                            <button className='btn btn-outline-warning me-3'
+                            onClick={goToAddDetails}
+                            >Prev</button>
+                            <button type='submit' className='btn btn-primary'>Save</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

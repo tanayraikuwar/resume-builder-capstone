@@ -60,7 +60,7 @@ function Template1() {
                   <>
                     <h4>{value.title}</h4>
                     <ul>
-                      <li>Organization Name : {value.Organization}</li>
+                      <li>Organization Name : {value.organization}</li>
                       <li>
                         {value.startDate}-{value.endDate}
                       </li>
