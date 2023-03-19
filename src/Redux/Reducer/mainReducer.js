@@ -1,4 +1,4 @@
-import mainData from "../../Template/data"
+import mainData from "../../data/data"
 
 // this reducer is more easy to read than previous reducer
 
@@ -8,6 +8,10 @@ console.log(initialState);
 let changeTemplateData = (state = initialState, action) => {
   // to change Personal Info
   switch (action.type) {
+    case "changeImage":
+      state.PersonalInfo.image = action.payload;
+      return {...state};
+
     case "changeName":
       state.PersonalInfo.name = action.payload;
       return { ...state };

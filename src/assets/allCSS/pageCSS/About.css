@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@600&family=Roboto:wght@500&display=swap");
+
+.divAbout {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* add display flex to add some spaces */
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px;
+  /* margin-right: 0; */
+}
+
+.mid-one {
+  padding:0%;
+  width: 60%;
+}
+
+.mid-two {
+  display: flex;
+  align-items: center;
+}
+
+.mid-two img {
+  padding-bottom: 80px;
+}
+
+.para {
+  font-family: "Caveat", cursive;
+  font-size: x-large;
+}
+
+.heading,
+.line {
+  font-family: "Heebo", sans-serif;
+}
+
+/* social media */
+.line {
+  padding-left: 4rem;
+}
+.socialMediaLinks {
+  display: flex;
+  width: 30%;
+  padding-left: 4rem;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  list-style: none;
+}
+.socialMediaLinks li {
+  cursor: pointer;
+}
+
+.fb {
+  color: #3b5998;
+  font-size: 40px;
+}
+.linkedin {
+  color: #0a66c2;
+  font-size: 40px;
+}
+.whatsapp {
+  color: #25d366;
+  font-size: 40px;
+}
+.twitter {
+  color: #00acee;
+  font-size: 40px;
+}
+.envelope {
+  color: grey;
+  font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    /* padding: 0; */
+  }
+  
+  .mid-one {
+    width: 100%;
+  }
+  .mid-two {
+    padding: 0%;
+    margin:0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialMediaLinks{
+    width:60%;
+  }
+}
+
+@media (max-width:590px){
+  .socialMediaLinks{
+    width:80%;
+  }
+}
+
+
+@media (max-width:490px){
+  .main{
+    margin:40px;
+  }
+
+  .mid-two img{
+    width:80%;
+  }
+
+  .para{
+    font-size: larger;
+  }
+
+  .line{
+    padding-left: 40px;
+  }
+
+  .socialMediaLinks{
+    padding-left: 40px;
+  }
+}

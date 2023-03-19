@@ -1,3 +1,10 @@
+let changeImage = (value) => {
+  return{
+    type:"changeImage",
+    payload:value
+  }
+};
+
 let changeName = (value) => {
   return {
     type: "changeName",
@@ -69,6 +76,7 @@ let changeObjective = (value) => {
 };
 
 export {
+  changeImage,
   changeName,
   changeLname,
   changeHeading,

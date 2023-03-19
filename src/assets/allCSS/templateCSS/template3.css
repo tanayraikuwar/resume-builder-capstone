@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+#template-3rd {
+  margin: 1.25em;
+  line-height: 2;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 0 6.25em 0;
+  color: #cb4154;
+}
+
+/* This is header css */
+
+#header-3rd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.5em;
+}
+
+.profile-3rd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.3125em;
+  width: 0.625em;
+  background-color: #cb4154;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.temp1Img-3rd {
+  border: 2px solid #cb4154;
+  border-radius: 100%;
+  height: 4.6875em;
+  width: 4.6875em;
+}
+.profile-3rd span {
+  color: white;
+  z-index: 2;
+  font-size: 2.1875em;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.temp3Img {
+  border: 2px solid #cb4154;
+  border-radius: 100%;
+  height: 4.6875em;
+  width: 4.6875em;
+}
+
+#template-3rd hr {
+  border: 0.3125em solid #cb4154;
+  border-radius: 0.3125em;
+}
+
+.headerBlock-3rd {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerBlock-3rd h2{
+  font-size: 1.875em;
+}
+
+.headerBlock-3rd div {
+  padding: 0 2.5em;
+}
+
+.contDetail-3rd {
+  line-height: normal;
+}
+
+/* This is summary css */
+.summary-3rd h2{
+  font-size: 1.875em;
+}
+/* this is professional experience section*/
+.proffExperience-3rd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proffExperience-3rd h3{
+  font-size: 1.625em;
+}
+
+.experience-3rd {
+  width: 69%;
+  color: black;
+}
+
+.experience-3rd h4 {
+  font-size: 1.25em;
+}
+
+/* This is education css */
+
+.education-3rd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-3rd h3{
+  font-size: 1.625em;
+}
+
+.eduDetails-3rd {
+  width: 75%;
+  color: black;
+}
+
+/* key skill CSS */
+
+.keySkills-3rd ul {
+  color: black;
+}
+
+.keySkills-3rd h4{
+  font-size: 1.25em;
+}
+
+.contactDetail-3rd ul li {
+  font-size: 0.9375em;
+  font-weight: bold;
+}
+
+.keySkill-3rd ul li {
+  font-size: 0.9375em;
+  font-weight: bold;
+}
